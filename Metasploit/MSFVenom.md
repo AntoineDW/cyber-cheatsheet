@@ -1,6 +1,6 @@
 # MSFVenom
 
-MSFVenom a payload generator.
+MSFVenom is a payload generator.
 
 ## Create a payload
 ```bash
