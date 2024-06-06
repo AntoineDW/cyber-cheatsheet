@@ -1,7 +1,8 @@
 # Gobuster
 
-## Find hidden pages in a website
+Gobuster is used to brute-force website directories
 
+## Find hidden pages in a website
 ```bash
 gobuster dir -u [url] -w [wordlist]
 ```
