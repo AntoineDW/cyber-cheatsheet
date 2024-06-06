@@ -1,6 +1,6 @@
 # SmbClient
 
-SmbClient is a tool used to connect to SAMBA shares.
+SmbClient is a tool used to connect to Samba shares.
 
 ## Display public shares on the server
 ```bash

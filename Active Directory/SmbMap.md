@@ -1,6 +1,6 @@
 # SmbMap
 
-SMBMap allows users to enumerate samba share drives across an entire domain.
+SMBMap allows users to enumerate Samba share drives across an entire domain.
 
 ## Enumerate a share
 ```bash
