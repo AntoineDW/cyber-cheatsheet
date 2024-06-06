@@ -1,6 +1,6 @@
 # Gobuster
 
-Gobuster is used to brute-force website directories
+Gobuster is used to brute-force website directories.
 
 ## Find hidden pages in a website
 ```bash

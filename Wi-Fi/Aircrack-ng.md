@@ -14,7 +14,7 @@ sudo airmon-ng stop [interface]
 
 ## Restart Wi-Fi after using airmon-ng
 ```bash
-ifconfig wlan0 up
+ifconfig [interface] up
 service NetworkManager restart
 ```
 
