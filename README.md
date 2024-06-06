@@ -1,1 +1,1 @@
-# Cyber Cheatsheet
+# cyber-cheatsheet
