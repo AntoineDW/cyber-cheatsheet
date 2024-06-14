@@ -11,3 +11,8 @@ hydra -t 4 -l [username] -P [wordlist] -vV [ip] ftp
 ```bash
 hydra -L [users] -P [passwords] [ip] -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In:[error_message]'
 ```
+
+## Bruteforce a Basic authentication
+```bash
+hydra -l [user] -P [passwords] -f [ip] http-get [path]
+```
