@@ -16,3 +16,8 @@ find / -user [user]
 ```bash
 find / -group [group]
 ```
+
+## Find file by its name
+```bash
+find / -type f -iname [name] -print 2>/dev/null
+```

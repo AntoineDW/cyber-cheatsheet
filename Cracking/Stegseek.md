@@ -1,6 +1,6 @@
 # Stegseek
 
-Stegseek is a tool used to crack image steghide passphrases.
+Stegseek is a tool used to crack steghide images passphrases.
 
 ## Passphrase cracking
 ```bash
