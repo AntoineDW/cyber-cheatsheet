@@ -2,10 +2,15 @@
 
 Nmap is a powerful network scanning tool.
 
-## Usual scan
+## Scan all the possible ports
 ```bash
-sudo nmap -sC -sV -O -oN [output_file] [ip]
+nmap -p- -oN [outfile] [ip]
 ```
+
+## Scan specific ports in details
+```bash
+nmap -sC -sV -Pn -p-[port1],[port2] -oN [outfile] [ip]
+``` 
 
 ## Scan using a proxy
 ```bash

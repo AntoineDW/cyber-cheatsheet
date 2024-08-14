@@ -1,6 +1,6 @@
 # GPG
 
-GPG is a encryption toolbox.
+GPG is an encryption toolbox.
 
 ## Decrypt a AES256 encrypted message
 ```bash
