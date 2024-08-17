@@ -6,3 +6,10 @@ SSH is a protocol allowing secured communication between two devices.
 ```bash
 ssh -i [key] [user]@[ip]
 ```
+
+## Port forwarding via SSH tunnel
+```bash
+ssh -L [remote_port]:localhost:[local_port] [user]@[ip]
+```
+
+Then the remote port should be available on `localhost`
