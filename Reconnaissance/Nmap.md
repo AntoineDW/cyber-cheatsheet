@@ -9,8 +9,13 @@ nmap -p- -oN [outfile] [ip]
 
 ## Scan specific ports in details
 ```bash
-nmap -sC -sV -Pn -p-[port1],[port2] -oN [outfile] [ip]
-``` 
+nmap -sC -sV -Pn -p[port1],[port2] -oN [outfile] [ip]
+```
+
+## Check the list of hosts that will be scanned
+```bash
+nmap -sL [ip]
+```
 
 ## Scan using a proxy
 ```bash

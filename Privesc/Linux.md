@@ -9,3 +9,8 @@ sudo -l
 ```bash
 find / -perm -u=s -type f 2>/dev/null
 ```
+
+## Display user capabilities
+```bash
+getcap -r / 2>/dev/null
+```
