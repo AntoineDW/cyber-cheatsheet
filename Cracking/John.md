@@ -10,6 +10,13 @@ john --wordlist=[wordlist] --format=[format] [hash_file]
 The list of john formats can be found here:
 [John formats](https://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats)
 
+## Hash cracking with salt
+The hash file should follow this format: `[hash]$[salt]`.
+
+```
+john --wordlist=[wordlist] --format='dynamic=sha512($p.$s)' [hash_file]
+```
+
 ## /etc/passwd and /etc/shadow cracking
 ```bash
 unshadow [passwd] [shadow] > [hash_file]

