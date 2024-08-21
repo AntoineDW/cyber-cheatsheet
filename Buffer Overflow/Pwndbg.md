@@ -44,6 +44,9 @@ set *[address] = [value]
 cyclic [number_of_bytes]
 ```
 
-## Formats des payloads en 32-bits et en 64-bits
+## Formats des payloads pour une éxécution de fonction
 * 32-bits: padding + function + return + param1 + param2
 * 64-bits: padding + pop rdi + param1 + pop rsi + param2 + function
+
+## Format du payload pour une éxécution de code
+* 32-bits: padding + jmp esp + code
