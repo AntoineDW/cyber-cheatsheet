@@ -44,9 +44,21 @@ set *[address] = [value]
 cyclic [number_of_bytes]
 ```
 
+## Search for a specific cyclic pattern
+```bash
+cyclic -l [pattern]
+```
+
+## Display the memory after the RSI register
+```bash
+x/200x $rsi
+```
+
 ## Formats des payloads pour une éxécution de fonction
 * 32-bits: padding + function + return + param1 + param2
 * 64-bits: padding + pop rdi + param1 + pop rsi + param2 + function
 
-## Format du payload pour une éxécution de code
-* 32-bits: padding + jmp esp + code
+## Format du payload pour une éxécution de shellcode
+* 32-bits: padding + jmp esp + shellcode
+* 32-bits: nop + shellcode + buffer address 
+* 64-bits: nop + shellcode + nop + buffer address
