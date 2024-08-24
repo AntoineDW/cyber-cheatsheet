@@ -1,5 +1,7 @@
 # Linux privilege escalation methods
 
+https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/linux-privilege-escalation/
+
 ## Display the hostname of the machine
 ```bash
 hostname

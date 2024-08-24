@@ -1,5 +1,7 @@
 # Windows privilege escalation methods
 
+https://swisskyrepo.github.io/InternalAllTheThings/redteam/escalation/windows-privilege-escalation/
+
 ## Find credentilas
 
 ### Places to find potential credentials
