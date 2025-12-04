@@ -2,7 +2,7 @@
 
 Zsteg is tool to detect stegano hidden data in PNG & BMP.
 
-## Install Zsteg
+## Install Zsteg
 ```bash
 sudo gem install zsteg
 ```
