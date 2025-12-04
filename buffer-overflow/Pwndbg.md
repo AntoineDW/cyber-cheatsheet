@@ -54,11 +54,11 @@ cyclic -l [pattern]
 x/200x $rsi
 ```
 
-## Formats des payloads pour une éxécution de fonction
+## Function execution payloads
 * 32-bits: padding + function + return + param1 + param2
 * 64-bits: padding + pop rdi + param1 + pop rsi + param2 + function
 
-## Format du payload pour une éxécution de shellcode
+## Shell execution payloads
 * 32-bits: padding + jmp esp + shellcode
 * 32-bits: nop + shellcode + buffer address 
 * 64-bits: nop + shellcode + nop + buffer address
