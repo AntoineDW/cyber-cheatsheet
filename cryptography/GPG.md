@@ -2,6 +2,11 @@
 
 GPG is an encryption toolbox.
 
+## Simplest way to decrypt a simple file
+```bash
+gpg -d [file_to_decrypt]
+```
+
 ## Decrypt a AES256 encrypted message
 ```bash
 gpg --import [public_key]
